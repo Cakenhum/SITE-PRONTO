@@ -1,0 +1,73 @@
+/* Estilos para a seção da imagem, título e descrição */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hero-image {
+    width: 50%; /* Ajuste para a imagem ocupar metade da tela */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+    width: 40%; /* Ajuste para o texto ocupar o espaço restante */
+    padding: 20px;
+    color: #333;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+    color: #D32F2F;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Estilos para o carrossel */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

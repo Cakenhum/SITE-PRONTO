@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Deliciosa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css"> <!-- Novo arquivo CSS para a home -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Padaria Deliciosa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="cadastro.html">Cadastro/Login</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção da imagem, título e descrição -->
+        <div class="hero-section">
+            <img src="download (3).jpg" alt="Padaria Deliciosa" class="hero-image">
+            <div class="hero-text">
+                <h2>Bem-vindo à Padaria Deliciosa!</h2>
+                <p>Delicie-se com os melhores pães, bolos e doces da cidade. Cada produto é feito com ingredientes frescos e amor.</p>
+            </div>
+        </div>
+
+        <!-- Carrossel -->
+        <div class="carousel">
+            <div class="carousel-container">
+                <img src="download (1).jpg" alt="Produto 1" class="carousel-image">
+                <img src="download (2).jpg" alt="Produto 2" class="carousel-image">
+                <img src="DL.jpg" alt="Produto 1" class="carousel-image">
+                <img src="MC.jpg" alt="Produto 1" class="carousel-image">
+                <img src="Brigadeiro.jpg" alt="Produto 1" class="carousel-image">
+                <img src="CF.jpg" alt="Produto 1" class="carousel-image">
+                
+               
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Padaria Deliciosa - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="home.js"></script> <!-- Novo arquivo JavaScript para o carrossel -->
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* Cor de fundo rosa para o site */
+* {
+    box-sizing: border-box; /* Garante que padding e border não afetem o tamanho */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FADADD; /* Rosa claro */
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #D32F2F; /* Rosa escuro */
+    padding: 10px;
+    color: white;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFEB3B; /* Cor ao passar o mouse */
+}
+
+/* Estilo principal da página */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para a página de Cadastro e Login */
+body.cadastro .form-container,
+body.contato .form-container {
+    display: flex;
+    flex-direction: column; /* Torna os elementos do formulário verticais */
+    align-items: center; /* Centraliza os itens */
+    gap: 25px; /* Espaçamento maior entre os campos e botões */
+    max-width: 400px; /* Limita a largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+body.cadastro .form-container input,
+body.cadastro .form-container textarea,
+body.contato .form-container input,
+body.contato .form-container textarea {
+    width: 100%; /* Faz os campos ocupar toda a largura disponível */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+body.cadastro .form-container button,
+body.contato .form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço maior entre os botões */
+}
+
+body.cadastro .form-container button:hover,
+body.contato .form-container button:hover {
+    background-color: #C2185B; /* Cor de hover do botão */
+}
+
+/* Estilo para a página de Produtos */
+body.produtos #product-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos que não couberem na linha seguinte se movam para a próxima linha */
+    justify-content: center; /* Centraliza os produtos */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px;
+}
+
+body.produtos .product-card {
+    background-color: white;
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+body.produtos .product-card:hover {
+    transform: scale(1.05); /* Aumenta o produto ao passar o mouse */
+}
+
+body.produtos .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+body.produtos .product-card h3 {
+    font-size: 1.2em;
+    color: #D32F2F;
+    margin-bottom: 10px;
+}
+
+body.produtos .product-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FADADD; /* Rosa claro */
+    color: #333;
+}
+/* Botões padrão */
+button {
+    background-color: #D32F2F; /* Vermelho escuro, consistente com o cabeçalho */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover */
+button:hover {
+    background-color: #C2185B; /* Tom mais escuro para hover */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+/* Para botões menores (específicos para produtos ou carrinho) */
+button.small {
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
